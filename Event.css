@@ -1,0 +1,140 @@
+body {
+  font-family: 'Libre Caslon Text', serif;
+  background-image: linear-gradient(180deg, rgba(255, 225, 225, 0.8), rgba(255, 225, 225, 0.8)), url('https://images.unsplash.com/photo-1528164344705-47542687000d');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#pseudo-body {
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navbar content";
+}
+
+#navbar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  border: 1px solid #000;
+  overflow: auto;
+  background-image: linear-gradient(180deg, rgba(220, 240, 210, 0.9), rgba(180, 240, 240 , 0.8));
+}
+
+#title {
+  max-width: 150px;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: rgba(240, 210, 245, 1);
+}
+
+.nav {
+  color: rgba(110, 20, 20, 1);
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid #000;
+  border-width: 1px 0px 0px 0px;
+  background-image: linear-gradient(180deg, rgba(220, 240, 210, 0.9), rgba(180, 240, 240 , 0.8));
+}
+
+#Ref-link {
+  border-width: 1px 0px 1px 0px;
+}
+
+#main-doc {
+  grid-area: content;
+  margin: 1em 1em 3em 1em;
+}
+
+.content-header {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: rgba(250,120,0,1);
+  text-decoration: underline;
+}
+
+.event {
+  margin: 1em 1em 0em 0em;
+  font-size: 1.15em;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(240, 20, 20, 1);
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 3px 3px 3px 3px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.code-2 {
+  color: rgba(100, 70, 70, 1);
+}
+
+@media (max-width: 479px) {
+  #pseudo-body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+      "navbar"
+      "content";
+  }
+
+  #navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 163px;
+    border: 1px solid #000;
+    overflow: auto;
+  }
+
+  #title {
+    min-width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0px;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: rgba(240, 210, 245, 1);
+  }
+
+  #main-doc {
+    grid-area: content;
+    margin: 35px 0.6em 3em 0.6em;
+  }
+
+  .anchor {
+    margin: -180px 0px 0px 0px;
+    padding: 180px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  #pseudo-body {
+    grid-template-columns: 150px auto;
+  }
+
+  #navbar {
+    max-width: 135px;
+  }
+
+  code {
+    font-size: 0.5em;
+  }
+}
