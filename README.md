@@ -1,7 +1,7 @@
 #### FreeCodeCamp Responsive Web Design Projects #4: Build a Technical Documentation Page
 ---
 - [Project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
-- Head over to [Codepen](https://codepen.io/Songluck/full/WNrGvgx) to see what this project looks like
+- Head over to [Codepen](https://codepen.io/Chung-Songyu/full/WNrGvgx) to see what this project looks like
 
 ** Note: FCC testing-related code/files/scripts/npms are not included in this repo.
 
